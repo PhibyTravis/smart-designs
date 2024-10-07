@@ -2,9 +2,13 @@
 .contact{
     
     @include flex(center, center, column);
+
     input{
     padding: 10px 100px;
     margin-top: 20px;
+    }
+    h4{
+        margin-top: 10px;
     }
    
 } 

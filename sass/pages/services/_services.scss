@@ -1,9 +1,5 @@
 @use "../../utilities/mixins" as *;
 
-body{
-    background-color: black;
-    color: grey;
-}
 .imejes{
     @include flex(space-between, center, row);
     margin-top: 50px;
