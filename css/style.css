@@ -1,3 +1,20 @@
 .contact {
-  @incl;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.contact input {
+  padding: 10px 100px;
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: none;
+  background-color: purple;
+  color: white;
+  margin-top: 10px;
 }
