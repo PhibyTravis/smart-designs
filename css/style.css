@@ -1,3 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
 .contact {
   display: flex;
   justify-content: center;
@@ -17,4 +28,53 @@
   background-color: purple;
   color: white;
   margin-top: 10px;
+}
+
+body {
+  background-color: black;
+  color: grey;
+}
+
+.imejes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 50px;
+}
+
+.image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 40px;
+}
+
+#webp {
+  border-radius: 90px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 30px 30px;
+}
+
+p {
+  padding: 30px 30px;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 30px;
 }
