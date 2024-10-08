@@ -1,9 +1,7 @@
-@mixin flex($justify,$align,$direction:row,$wrap:nowrap){
-    display: flex;
-    justify-content: $justify;
-    align-items: $align;
-    flex-direction: $direction;
+@mixin flex($justify, $align, $direction:row, $wrap:no-wrap){
+    display:flex;
+    justify-content:$justify;
+    align-items:$align;
+    flex-direction:$direction;
     flex-wrap:$wrap;
-    }
-    
-    
+}

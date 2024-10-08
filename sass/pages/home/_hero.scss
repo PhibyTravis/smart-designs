@@ -1,0 +1,25 @@
+@use "../../utilities/mixins" as *;
+
+h1{
+    text-align: center;
+    margin: 30px 30px;
+    color: purple;
+}
+h2{
+    text-align: center;
+    color: purple;
+
+}
+.asset{
+ 
+    @include flex(space-between, flex-start);
+    .asset-right{
+        margin: 40px 30px;
+        .photo{
+            margin-top: 20px;
+        }
+    }
+    .asset-left{
+        margin: 40px 30px;
+    }
+}

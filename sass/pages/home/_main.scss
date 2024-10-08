@@ -1,0 +1,19 @@
+@use "../../utilities/variables" as *;
+@use "../../utilities/mixins" as *;
+
+
+.imejjes{
+    @include flex(space-between, center);
+    h3{
+        @include flex(flex-start,center);
+        color: purple;
+        margin: 10px 10px;
+    }
+}
+.main-main{
+    @include flex(space-between,center);
+    margin: 50px 50px;
+    .main-main-right{
+        margin-left: 30px;
+    }
+}
