@@ -1,9 +1,17 @@
 @use "../../utilities/mixins" as *;
+
 .contact{
-    @include flex(center, center, column);
+    
+    @include flex(space-between, center);
+.conctact-right{
+    margin-left: 40px;
+}
     input{
     padding: 10px 100px;
     margin-top: 20px;
+    }
+    h4{
+        margin-top: 10px;
     }
    
 } 
@@ -14,4 +22,10 @@
     background-color: purple;
     color: white;
     margin-top: 10px;
+}
+
+@media screen and (max-width:600){
+    html{
+        font-size: 55%;
+    }
 }

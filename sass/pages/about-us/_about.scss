@@ -1,0 +1,26 @@
+@use "../../utilities/mixins" as *;
+@use "../../utilities/variables" as *;
+
+
+.cake{
+    @include flex(space-between, flex-start);
+    margin-top: 50px;
+    .cake-left{
+        margin-top: 50px;
+    }
+
+}
+.love{
+    @include flex(space-between, center);
+    margin-top: 50px;
+    .love-right{
+        margin-top: 50px;
+    }
+}
+.about{
+    @include flex(space-between, flex-start);
+    margin-top: 50px;
+   h2{
+    text-align: center;
+   }
+}
