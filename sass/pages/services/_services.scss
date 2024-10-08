@@ -24,3 +24,14 @@ h3{
     @include flex(center,center);
      margin-top: 30px;
 }
+
+// media queries
+@media screen and (max-width:600px){
+    .imejes{
+        flex-direction: column;
+        margin-top:10px;
+    }
+    .image{
+        flex-direction: column;
+    }
+}
