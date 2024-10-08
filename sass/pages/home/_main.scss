@@ -17,3 +17,26 @@
         margin-left: 30px;
     }
 }
+@media screen and (max-width:600px){
+    .container{
+        .asset{
+            .asset-left{
+                display: none;
+            }
+        }
+        .imejjes{
+            flex-direction: column;
+        }
+        .main-main{
+            .main-main-left{
+                display: none;
+                align-items: center;
+                // width: 50%;
+            }
+            .main-main-right{
+                flex-direction: column;
+            }
+        }
+    }
+  
+}

@@ -98,6 +98,21 @@ ul, li {
   margin-left: 30px;
 }
 
+@media screen and (max-width: 600px) {
+  .container .asset .asset-left {
+    display: none;
+  }
+  .container .imejjes {
+    flex-direction: column;
+  }
+  .container .main-main .main-main-left {
+    display: none;
+    align-items: center;
+  }
+  .container .main-main .main-main-right {
+    flex-direction: column;
+  }
+}
 h1 {
   text-align: center;
   margin: 30px 30px;
@@ -153,9 +168,24 @@ h2 {
   margin-top: 10px;
 }
 
-@media screen and (max-width: 600) {
-  html {
-    font-size: 55%;
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-left {
+    display: none;
+  }
+  .nav {
+    flex-direction: column;
+  }
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer img {
+    margin: 10px 0;
   }
 }
 .imejes {
@@ -202,6 +232,15 @@ h3 {
   margin-top: 30px;
 }
 
+@media screen and (max-width: 600px) {
+  .imejes {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .image {
+    flex-direction: column;
+  }
+}
 .cake {
   display: flex;
   justify-content: space-between;
@@ -236,4 +275,11 @@ h3 {
 }
 .about h2 {
   text-align: center;
+}
+
+@media screen and (max-width: 6oopx) {
+  .about-left {
+    display: none;
+    flex-direction: column;
+  }
 }
