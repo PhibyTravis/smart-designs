@@ -11,10 +11,13 @@
 
 .contact {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: nowrap;
+}
+.contact .conctact-right {
+  margin-left: 40px;
 }
 .contact input {
   padding: 10px 100px;
@@ -33,6 +36,11 @@
   margin-top: 10px;
 }
 
+@media screen and (max-width: 600) {
+  html {
+    font-size: 55%;
+  }
+}
 .imejes {
   display: flex;
   justify-content: space-between;
