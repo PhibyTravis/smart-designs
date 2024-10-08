@@ -17,6 +17,7 @@
         margin-left: 30px;
     }
 }
+
 @media screen and (max-width:600px){
     .container{
         .asset{
@@ -39,4 +40,20 @@
         }
     }
   
+
+//media queries//
+@media screen and (max-width: 600px);{
+    .main-main{
+font-size: 16px;
+    }
+    .imejjes{
+        font-size: 16px;
+    }
+    .main-main-right{
+        font-size: 16px;
+    }
+    .main-main-left{
+        font-size: 16px;
+    }
+
 }

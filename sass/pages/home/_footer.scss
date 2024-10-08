@@ -1,19 +1,44 @@
 @use "../../utilities/mixins" as *;
 .footer{
     @include flex (space-between, center);
-    margin-top: 20px;
+    
+    height:200px;
   
     background-color:purple;
     color: white;
     #phone1{
-        padding: 5px 30px;
+        padding: 5px 20px;
     }
     #phone{
         background-color: white;
     }
+    p{
+        @include flex(flex-start ,center)
+    }
+    
    
 }
 .address{
     height: 50px;
     margin-right: 100px;
+}
+.png{
+    @include flex(center ,center);
+    margin-top: 20px;
+}
+//media queries//
+@media screen and(max-width){
+    .footer{
+        font-size: 16px;
+    }
+    .png{
+        font-size: 16px;
+    }
+    .address{
+        font-size: 16px;
+        .phone1{
+            font-size: 16px;
+        }
+    }
+
 }
