@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.contact .conctact-right {
+  margin-left: 40px;
+}
+.contact input {
+  padding: 10px 100px;
+  margin-top: 20px;
+}
+.contact h4 {
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: none;
+  background-color: purple;
+  color: white;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 600) {
+  html {
+    font-size: 55%;
+  }
+}
+.imejes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 50px;
+}
+
+.image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 40px;
+}
+
+#webp {
+  border-radius: 90px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding: 30px 30px;
+}
+
+p {
+  padding: 30px 30px;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 30px;
+}
+
+.cake {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 50px;
+}
+.cake .cake-left {
+  margin-top: 50px;
+}
+
+.love {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 50px;
+}
+.love .love-right {
+  margin-top: 50px;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-top: 50px;
+}
+.about h2 {
+  text-align: center;
+}
