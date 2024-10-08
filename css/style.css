@@ -53,20 +53,36 @@ ul, li {
   align-items: center;
   flex-direction: row;
   flex-wrap: no-wrap;
-  margin-top: 20px;
+  height: 200px;
   background-color: purple;
   color: white;
 }
 .footer #phone1 {
-  padding: 5px 30px;
+  padding: 5px 20px;
 }
 .footer #phone {
   background-color: white;
+}
+.footer p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
 }
 
 .address {
   height: 50px;
   margin-right: 100px;
+}
+
+.png {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  margin-top: 20px;
 }
 
 .imejjes {
@@ -98,6 +114,11 @@ ul, li {
   margin-left: 30px;
 }
 
+@media screen and (max-width: 600px) {
+  .main-main {
+    font-size: 16px;
+  }
+}
 h1 {
   text-align: center;
   margin: 30px 30px;
