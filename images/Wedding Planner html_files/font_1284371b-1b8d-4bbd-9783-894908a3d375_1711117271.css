@@ -1,0 +1,13 @@
+@font-face{
+ font-family:'Addington-CF';
+ src:url('https://usercontent.flodesk.com/17665d2a-43b7-4231-a101-fa51af5d1050/font/AddingtonCFLight.ttf') format('truetype');
+ font-weight:300;
+ font-style:normal;
+ font-display:swap
+}@font-face{
+ font-family:'Addington-CF';
+ src:url('https://usercontent.flodesk.com/17665d2a-43b7-4231-a101-fa51af5d1050/font/addingtoncflightitalic.ttf') format('truetype');
+ font-weight:300;
+ font-style:italic;
+ font-display:swap
+}

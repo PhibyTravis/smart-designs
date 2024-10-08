@@ -1,0 +1,30 @@
+@use "../../utilities/mixins" as *;
+@use "../../utilities/variables" as *;
+
+.nav{   
+   background-color: purple;
+   @include flex (space-between, center);
+    .nav-right{
+        ul{
+            @include flex (space-between, center);
+            display: flex;
+
+            li{
+                color: purple;
+
+                a{
+    
+                    color: white;
+
+                    display:inline-block;
+                    padding: 50px;
+                
+                }
+            }
+        }
+    }
+} 
+.nav-left{
+    padding-left: 100px;
+}      
+    
