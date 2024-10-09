@@ -250,7 +250,7 @@ h3 {
   margin-top: 50px;
 }
 .cake .cake-left {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .love {
@@ -275,4 +275,27 @@ h3 {
 }
 .about h2 {
   text-align: center;
+}
+
+.about-right #em {
+  border-radius: 20px;
+  margin-left: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .about .about-left #em {
+    display: none;
+  }
+  .about .about-right #em {
+    display: none;
+  }
+  .cake .cake-left #em {
+    display: none;
+  }
+  .cake .cake-right {
+    display: none;
+  }
+  .love .love-left {
+    display: none;
+  }
 }

@@ -1,13 +1,13 @@
 @use "../../utilities/mixins" as *;
 @use "../../utilities/variables" as *;
 
-
 .cake{
     @include flex(space-between, flex-start);
     margin-top: 50px;
     .cake-left{
-        margin-top: 50px;
+        margin-top: 20px;
     }
+   
 
 }
 .love{
@@ -24,5 +24,41 @@
     text-align: center;
    }
 }
+.about-right{
+    #em{
+        border-radius: 20px;
+        margin-left: 40px;
+    }
+}
 
+@media screen and (max-width:600px){
+    .about{
+      
+        .about-left{
+            #em{
+                display: none;
 
+            }
+        }
+        .about-right{
+            #em{
+                display: none;
+            }
+        }
+    }
+    .cake{
+        .cake-left{
+            #em{
+                display: none;
+            }
+        }
+        .cake-right{
+         display: none;
+        }
+    }
+    .love{
+        .love-left{
+            display: none;
+        }
+    }
+}
