@@ -276,10 +276,3 @@ h3 {
 .about h2 {
   text-align: center;
 }
-
-@media screen and (max-width: 6oopx) {
-  .about-left {
-    display: none;
-    flex-direction: column;
-  }
-}
