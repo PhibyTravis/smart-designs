@@ -27,17 +27,17 @@
     margin-top: 20px;
 }
 //media queries//
-@media screen and(max-width){
+@media screen and (max-width){
     .footer{
-        font-size: 16px;
+        flex-direction: column;
     }
     .png{
-        font-size: 16px;
+        flex-direction: column;
     }
     .address{
-        font-size: 16px;
+        flex-direction: column;
         .phone1{
-            font-size: 16px;
+            flex-direction: column;
         }
     }
 

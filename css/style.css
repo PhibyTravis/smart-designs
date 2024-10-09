@@ -38,15 +38,26 @@ ul, li {
   color: purple;
 }
 .nav .nav-right ul li a {
-  color: white;
+  color: black;
   display: inline-block;
-  padding: 50px;
+  padding: 20px;
+}
+.nav .nav-right ul li a:hover {
+  background-color: white;
 }
 
 .nav-left {
   padding-left: 100px;
 }
 
+@media screen and (max-width: 600px) {
+  .nav-right {
+    display: none;
+  }
+  .nav-left {
+    font-size: 16px;
+  }
+}
 .footer {
   display: flex;
   justify-content: space-between;
@@ -85,6 +96,20 @@ ul, li {
   margin-top: 20px;
 }
 
+@media screen and (max-width) {
+  .footer {
+    flex-direction: column;
+  }
+  .png {
+    flex-direction: column;
+  }
+  .address {
+    flex-direction: column;
+  }
+  .address .phone1 {
+    flex-direction: column;
+  }
+}
 .imejjes {
   display: flex;
   justify-content: space-between;
@@ -127,9 +152,6 @@ ul, li {
   }
   .container .main-main .main-main-right {
     flex-direction: column;
-  .main-main {
-    font-size: 16px;
-
   }
 }
 h1 {
