@@ -38,30 +38,48 @@ ul, li {
   color: purple;
 }
 .nav .nav-right ul li a {
-  color: white;
+  color: black;
   display: inline-block;
-  padding: 50px;
+  padding: 20px;
+}
+.nav .nav-right ul li a:hover {
+  background-color: white;
 }
 
 .nav-left {
   padding-left: 100px;
 }
 
+@media screen and (max-width: 600px) {
+  .nav-right {
+    display: none;
+  }
+  .nav-left {
+    font-size: 16px;
+  }
+}
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   flex-wrap: no-wrap;
-  margin-top: 20px;
+  height: 200px;
   background-color: purple;
   color: white;
 }
 .footer #phone1 {
-  padding: 5px 30px;
+  padding: 5px 20px;
 }
 .footer #phone {
   background-color: white;
+}
+.footer p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
 }
 
 .address {
@@ -69,6 +87,29 @@ ul, li {
   margin-right: 100px;
 }
 
+.png {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  margin-top: 20px;
+}
+
+@media screen and (max-width) {
+  .footer {
+    flex-direction: column;
+  }
+  .png {
+    flex-direction: column;
+  }
+  .address {
+    flex-direction: column;
+  }
+  .address .phone1 {
+    flex-direction: column;
+  }
+}
 .imejjes {
   display: flex;
   justify-content: space-between;
@@ -98,6 +139,21 @@ ul, li {
   margin-left: 30px;
 }
 
+@media screen and (max-width: 600px) {
+  .container .asset .asset-left {
+    display: none;
+  }
+  .container .imejjes {
+    flex-direction: column;
+  }
+  .container .main-main .main-main-left {
+    display: none;
+    align-items: center;
+  }
+  .container .main-main .main-main-right {
+    flex-direction: column;
+  }
+}
 h1 {
   text-align: center;
   margin: 30px 30px;
@@ -128,14 +184,20 @@ h2 {
 
 .contact {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: no-wrap;
+}
+.contact .conctact-right {
+  margin-left: 40px;
 }
 .contact input {
   padding: 10px 100px;
   margin-top: 20px;
+}
+.contact h4 {
+  margin-top: 10px;
 }
 
 .btn {
@@ -145,4 +207,120 @@ h2 {
   background-color: purple;
   color: white;
   margin-top: 10px;
+}
+
+/* Media Query for responsiveness */
+@media (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-left {
+    display: none;
+  }
+  .nav {
+    flex-direction: column;
+  }
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer img {
+    margin: 10px 0;
+  }
+}
+.imejes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  margin-top: 50px;
+}
+
+.image {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  margin-top: 40px;
+}
+
+#webp {
+  border-radius: 90px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  padding: 30px 30px;
+}
+
+p {
+  padding: 30px 30px;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .imejes {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  .image {
+    flex-direction: column;
+  }
+}
+.cake {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  margin-top: 50px;
+}
+.cake .cake-left {
+  margin-top: 50px;
+}
+
+.love {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  margin-top: 50px;
+}
+.love .love-right {
+  margin-top: 50px;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  margin-top: 50px;
+}
+.about h2 {
+  text-align: center;
+}
+
+@media screen and (max-width: 6oopx) {
+  .about-left {
+    display: none;
+    flex-direction: column;
+  }
 }

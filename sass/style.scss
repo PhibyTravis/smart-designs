@@ -1,7 +1,8 @@
-@use "./utilities/base" as *;
-@use "./pages/home/nav" as *;
-@use "./pages/home/footer" as *;
-@use "./pages/home/main" as *;
-@use "./pages/home/hero" as *;
-@use "./pages/contact/contact" as *;
-@use "./pages/./home/nav" as *;
+@use "./utilities/base";
+@use "./pages/home/nav";
+@use "./pages/home/footer";
+@use "./pages/home/main";
+@use "./pages/home/hero";
+@use "./pages/contact/contact";
+@use "./pages/services/services";
+@use "./pages/about-us/about";

@@ -1,0 +1,37 @@
+@use "../../utilities/mixins" as *;
+
+.imejes{
+    @include flex(space-between, center, row);
+    margin-top: 50px;
+}
+.image{
+    @include flex(space-between, center,row);
+    margin-top: 40px;
+  
+    
+}
+#webp{
+    border-radius: 90px;
+}
+h1{
+    @include flex(center,center);
+    padding: 30px 30px;
+}
+p{
+    padding: 30px 30px;
+}
+h3{
+    @include flex(center,center);
+     margin-top: 30px;
+}
+
+// media queries
+@media screen and (max-width:600px){
+    .imejes{
+        flex-direction: column;
+        margin-top:10px;
+    }
+    .image{
+        flex-direction: column;
+    }
+}
