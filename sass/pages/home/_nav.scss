@@ -9,15 +9,19 @@
             @include flex (space-between, center);
             display: flex;
 
+
             li{
                 color: purple;
 
+
                 a{
     
-                    color: white;
-
+                    color: black;
                     display:inline-block;
-                    padding: 50px;
+                    padding: 20px;
+                    &:hover{
+                        background-color: white;
+                    }
                 
                 }
             }
@@ -27,5 +31,16 @@
 .nav-left{
     padding-left: 100px;
 }
+//media queries//
+@media screen and (max-width:600px){
+    .nav-right{
+        display: none;
+    }
+    .nav-left{
+        font-size: 16px;
+    }
+}
+     
+    
 
 

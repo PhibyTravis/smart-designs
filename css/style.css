@@ -38,30 +38,48 @@ ul, li {
   color: purple;
 }
 .nav .nav-right ul li a {
-  color: white;
+  color: black;
   display: inline-block;
-  padding: 50px;
+  padding: 20px;
+}
+.nav .nav-right ul li a:hover {
+  background-color: white;
 }
 
 .nav-left {
   padding-left: 100px;
 }
 
+@media screen and (max-width: 600px) {
+  .nav-right {
+    display: none;
+  }
+  .nav-left {
+    font-size: 16px;
+  }
+}
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   flex-wrap: no-wrap;
-  margin-top: 20px;
+  height: 200px;
   background-color: purple;
   color: white;
 }
 .footer #phone1 {
-  padding: 5px 30px;
+  padding: 5px 20px;
 }
 .footer #phone {
   background-color: white;
+}
+.footer p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
 }
 
 .address {
@@ -69,6 +87,29 @@ ul, li {
   margin-right: 100px;
 }
 
+.png {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  margin-top: 20px;
+}
+
+@media screen and (max-width) {
+  .footer {
+    flex-direction: column;
+  }
+  .png {
+    flex-direction: column;
+  }
+  .address {
+    flex-direction: column;
+  }
+  .address .phone1 {
+    flex-direction: column;
+  }
+}
 .imejjes {
   display: flex;
   justify-content: space-between;
